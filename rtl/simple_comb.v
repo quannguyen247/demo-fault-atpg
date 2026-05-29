@@ -1,6 +1,7 @@
 `timescale 1ns/1ps
 
 module simple_comb (
+    input clk,
     input a,
     input b,
     input c,
