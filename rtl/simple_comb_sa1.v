@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module simple_logic (
+module simple_comb_sa1 (
     input a,
     input b,
     input c,
@@ -9,7 +9,7 @@ module simple_logic (
 
     wire x, y;
 
-    assign x = a & b;
+    assign x = 1'b1; // x stuck-at-1
     assign y = x | c;
     assign z = y ^ c;
 
